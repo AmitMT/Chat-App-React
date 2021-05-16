@@ -27,14 +27,14 @@ function App() {
 			console.log(id);
 		});
 
+		console.log('https://chat-app-server-amitmt.herokuapp.com');
+
 		return () => {
 			_socket.disconnect();
 		};
 	}, []);
 
 	const [ isLight, setIsLight ] = useLocalStorage('isLight', false);
-
-	console.log('https://chat-app-server-amitmt.herokuapp.com');
 
 	const theme = createMuiTheme({
 		palette: {

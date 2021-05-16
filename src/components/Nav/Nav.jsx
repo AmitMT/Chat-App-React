@@ -22,7 +22,7 @@ const Nav = ({ isLight, setIsLight, ...props }) => {
 						{/* <img src={logo} alt='logo' className={classes.logo} /> */}
 						<CommentIcon className={classes.logo} />
 						<Typography variant='h5' className={classes.title}>
-							Chat App - Rom Kondom
+							Chat App
 						</Typography>
 						<IconButton
 							className={classes.IconButton}
