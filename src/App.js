@@ -13,7 +13,14 @@ function App() {
 	const [ socket, setSocket ] = useState();
 
 	useEffect(() => {
-		const _socket = io('https://chat-app-server-amitmt.herokuapp.com/');
+		var connectionOptions = {
+			'force new connection': true,
+			reconnectionAttempts: 'Infinity',
+			timeout: 10000,
+			transports: [ 'websocket' ]
+		};
+
+		const _socket = io('https://chat-app-server-amitmt.herokuapp.com/', connectionOptions);
 		setSocket(_socket);
 		console.log(_socket);
 
