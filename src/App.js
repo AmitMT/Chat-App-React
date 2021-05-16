@@ -28,6 +28,8 @@ function App() {
 
 	const [ isLight, setIsLight ] = useLocalStorage('isLight', true);
 
+	console.log('https://chat-app-server-amitmt.herokuapp.com');
+
 	const theme = createMuiTheme({
 		palette: {
 			primary: {
