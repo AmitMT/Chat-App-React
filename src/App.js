@@ -13,7 +13,7 @@ function App() {
 	const [ socket, setSocket ] = useState();
 
 	useEffect(() => {
-		const _socket = io();
+		const _socket = io('https://chat-app-server-amitmt.herokuapp.com/');
 		setSocket(_socket);
 		console.log(_socket);
 
