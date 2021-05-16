@@ -22,7 +22,6 @@ function App() {
 
 		const _socket = io('https://chat-app-server-amitmt.herokuapp.com/', connectionOptions);
 		setSocket(_socket);
-		console.log(_socket);
 
 		_socket.on('id', (id) => {
 			console.log(id);
