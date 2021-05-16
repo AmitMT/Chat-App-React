@@ -33,7 +33,7 @@ function App() {
 		};
 	}, []);
 
-	const [ isLight, setIsLight ] = useLocalStorage('isLight', true);
+	const [ isLight, setIsLight ] = useLocalStorage('isLight', false);
 
 	console.log('https://chat-app-server-amitmt.herokuapp.com');
 
