@@ -1,1 +1,1 @@
-## https://chat-app-amitmt.netlify.app/
+## https://chat-app-amitmt.netlify.app
